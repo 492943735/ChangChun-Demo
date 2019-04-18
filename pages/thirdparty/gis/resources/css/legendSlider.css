@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+div[class='layer_legend_container_for_one_map'] {
+    position: absolute;
+    top: 110px;
+    right: 30px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+
+    box-shadow: 1px 1px 7px 2px gray;
+    -moz-box-shadow: 1px 1px 7px 2px gray;
+    -webkit-box-shadow: 1px 1px 7px 2px gray;
+    z-index: 1;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider {
+    position: relative;
+    width: 100%;
+    height: 255px;
+    background-color: white;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div[class^="slider_"] {
+    float: left;
+    height: 255px;
+}
+
+/******************************left***************************************************************************/
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div[class^="slider_left"] {
+    width: 25px;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div.slider_left_chrome > input {
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    width: 255px;
+    position: absolute;
+    left: -108px;
+    top: 125px;
+
+    -webkit-appearance: none !important;
+    height: 1px;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div.slider_left_Firefox > input {
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    width: 255px;
+    position: absolute;
+    left: -118px;
+    top: 126px;
+
+    -webkit-appearance: none !important;
+    height: 1px;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div.slider_left_MsIE > input {
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    width: 255px;
+    position: absolute;
+    left: -112px;
+    top: 102px;
+
+    -webkit-appearance: none !important;
+    height: 2px;
+}
+
+/******************************left***************************************************************************/
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div.slider_color {
+    width: 5px;
+}
+
+/******************************right***************************************************************************/
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div[class^="slider_right"] {
+    width: 25px;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div.slider_right_chrome > input {
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    width: 255px;
+    position: absolute;
+    right: -14px;
+    top: 125px;
+
+    -webkit-appearance: none !important;
+    height: 1px;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div.slider_right_Firefox > input {
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    width: 255px;
+    position: absolute;
+    right: -23px;
+    top: 126px;
+
+    -webkit-appearance: none !important;
+    height: 1px;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer_slider > div.slider_right_MsIE > input {
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    width: 255px;
+    position: absolute;
+    right: -2px;
+    top: 102px;
+
+    -webkit-appearance: none !important;
+    height: 2px;
+}
+
+/******************************right***************************************************************************/
+
+/******************************legend label***************************************************************************/
+.one_legend_box_one_layer_slider > .legend_label_div_class {
+    position: absolute;
+    top: 117.5px;
+    right: 35px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #58B4F3;
+    border-radius: 2px;
+    padding: 2px 10px;
+    color: white;
+}
+
+.one_legend_box_one_layer_slider > .legend_label_low_div_class {
+    position: absolute;
+    top: -1px;
+    right: 72px;
+    background-color: #58B4F3;
+    padding: 2px 10px;
+    color: white;
+    height: 18px;
+    line-height: 18px;
+}
+
+.one_legend_box_one_layer_slider > .legend_label_high_div_class {
+    position: absolute;
+    top: 233px;
+    right: 62px;
+    background-color: #58B4F3;
+    padding: 2px 10px;
+    color: white;
+    height: 18px;
+    line-height: 18px;
+}
+
+/******************************legend label***************************************************************************/
+
+/**************************************滑动条样式**************************************************************************************/
+input[type="range"]::-webkit-slider-thumb {
+    width: 5px;
+    height: 8px;
+    border: 1px solid rgba(18, 147, 206, 1);
+    background: deepskyblue;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none !important;
+    cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+    width: 5px;
+    height: 8px;
+    border: 1px solid rgba(18, 147, 206, 1);
+    background: deepskyblue;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    border: 2px solid rgba(18, 147, 206, 1);
+    height: 10px;
+    width: 2px;
+    background: deepskyblue;
+    cursor: pointer;
+    -ms-appearance: none !important;
+}
+
+/* Hides the slider so custom styles can be added */
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: white;
+    border-color: white;
+    color: white;
+}
+
+/* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+input[type=range]:focus {
+    outline: none;
+}
+
+/**************************************滑动条样式**************************************************************************************/

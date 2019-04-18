@@ -1,0 +1,119 @@
+.resorcetable{
+    border: none;
+    border-right: 1px solid #5a8a89;
+    width: 100% !important;
+    display: block;
+}
+
+.resorcetable td{
+	border: none;
+    border-left: 1px solid #5a8a89;	
+    width: 24%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+.resorcetable tr{
+	border: none;
+	border-bottom: 1px solid #5a8a89;
+    width: 100%;
+    display: block;
+}
+
+table.resorcetable > tbody {
+    width: 100%;
+    display: block;
+}
+
+.resorcetable1{
+    border: none;
+    border-right: 1px solid #5a8a89;
+    width: 100% !important;
+    display: block;
+}
+
+.resorcetable1 td{
+	border: none;
+    border-left: 1px solid #5a8a89;	
+    width: 32%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+.resorcetable1 tr{
+	border: none;
+	border-bottom: 1px solid #5a8a89;
+    width: 100%;
+    display: block;
+}
+
+table.resorcetable1 > tbody {
+    width: 100%;
+    display: block;
+}
+
+.setResource {
+   	display: block!important;
+   	width: 37.566666rem !important;
+    height: 19.166666rem !important;
+}
+
+.mesResource {
+    margin: auto 1.666666rem auto 20% !important;
+    padding: 2rem !important;
+    width: 80% !important;
+    height: 17.43rem;
+    overflow: hidden;
+}
+
+.titleResource {
+    text-align: center !important;
+    line-height: 1.6rem !important;
+    margin-top: -1.2rem !important;
+    color: #999999 !important;
+    font-size: 1.6rem !important;
+}
+
+.tipResource {
+    color: #999999 !important;
+    padding-top: 0.333333rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    padding-right: 1rem !important;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tabBodyResource {
+	width: 100% !important;
+    height: 12.7rem !important;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 0.333rem;
+   border-bottom: 1px solid #5a8a89;
+   border-top: 1px solid #5a8a89;
+}
+
+.last_tr_border{
+	border-bottom: none !important;
+}
+
+.resourceFlooter {
+    text-align: right !important;
+}
+
+.btnResource {
+    margin: 0 0 0 2rem !important;
+}
+
+.tdValue {
+    color: #eeeeee !important;
+    text-align: center;
+}

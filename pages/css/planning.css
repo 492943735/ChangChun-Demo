@@ -1,0 +1,50 @@
+.planingBtn{
+	display: none;
+}
+.kuwait_planning{
+	display: none!important;
+	position: absolute;
+	right: 0.8rem;
+	height: auto!important;
+	line-height: initial!important;
+	padding: 0 0.5rem!important;
+	border: 0;
+	font-size: 1.2rem;
+	background-size: 100% 100%;
+	background-color: #1a262b;
+	background-repeat: no-repeat;
+	background-image: url(../../pages/images/btnBgActive.png);
+	color: #1a262b;
+	cursor: pointer;
+}
+
+#float_message_container_polygon,#float_message_container_cell{
+	position: relative;
+}
+.cellBox .kuwait_planning_hvc{
+	display: block!important;
+    position: absolute;
+    border: 0;
+    font-size: 1.2rem;
+    background-size: 100% 100%;
+    background-color: #1a262b;
+    background-repeat: no-repeat;
+    background-image: url(../../pages/images/btnBgActive.png);
+    color: #1a262b;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    cursor: pointer;
+    height: 2rem;
+    width: 8rem;
+    line-height: 2rem;
+    text-align: center!important;
+}
+.cellBox .showPlanningBtnContainer{
+	height: 19.5rem;
+}
+#ol-popupClose-id{ 
+    z-index: 99;
+    text-decoration: none!important;
+    color: #ddd;
+    font-size: 1.40625rem;
+}

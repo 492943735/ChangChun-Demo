@@ -1,0 +1,171 @@
+.accessBoxRuler {
+    overflow: hidden;
+}
+ .frequencyModelColor {
+ 	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 21;
+    background-color: rgba(35, 35, 35, 0.8);
+ }
+ 
+.frequencyBox {
+    width: 45rem;
+    height: 25rem;
+    background-image: url(../../pages/images/scenario_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: -12.5rem auto 0 auto;
+    position: relative;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+} 
+
+.frequencyTitle {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.366667rem;
+    color: #999999;
+}
+
+.frequencyBody {
+    height: 100%;
+    margin: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.frequencyFooter {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+.btnInit {
+	width: 7rem;
+    height: 2rem;
+    border: 0;
+    font-size: 1.1rem;
+    background-size: 100% 100%;
+    outline: none;
+    margin: 0 2rem 0 2rem;
+}
+
+.btnInit:active {
+	background: url(../../pages/images/btnBgActive.png) no-repeat !important;
+ 	color: #1a262b!important;
+}
+
+.frequencyClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2rem;
+    line-height: 1rem;
+    width: 3.5rem;
+    display: inline-block;
+    font-size: 2rem;
+    color: #6f928e;
+    cursor: pointer;
+    text-align: center;
+}
+
+.frequency_accessBody {
+	height: 2rem;
+}
+
+.frequency_accessStyle {
+   	display: inline-block;
+    height: 100%;
+    font-size: 1.2rem;
+    color: #5A8A89;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.frequency_accessStyle_selected {
+	color: #00fffc!important;
+}
+
+.frequency_canvas {
+    height: 16rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.frequency_models {
+	display: inline-block;
+    white-space: nowrap;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 100%;
+	margin-left: 0;
+	transition: margin-left 1s;
+}
+
+.frequency_model {
+	display: inline-block;
+	height: 100%;
+	width: 40rem;
+	padding: 0!important;
+    border: 1px solid #5a8a89;
+}
+
+.frequencyTd {
+    padding: 0 0 0 1rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: 1px solid #5a8a89;
+    position: relative;
+}
+
+.frequencyTd:nth-child(odd) {
+	border-right: 1px solid #5a8a89;
+}
+
+.frequencyTd:nth-child(odd):before {
+	content: '';
+	height: 100%;
+	width: 100%;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid #5a8a89;
+	position: absolute;
+	top: 1px;
+	right: -100%;
+	pointer-events: none;
+}
+
+.frequencyFrom {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+    line-height: initial;
+    vertical-align: middle;
+}
+
+.frequencyChooseWidth {
+	width: 1.666666rem;
+    height: 1.666666rem;
+    visibility: hidden;
+    position: absolute;
+}
+
+.frequencyGlyphicon {
+	top: 0!important;
+}
+
+.frequencyRow {
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden; 
+}

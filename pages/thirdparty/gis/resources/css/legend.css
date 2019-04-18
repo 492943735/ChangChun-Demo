@@ -1,0 +1,158 @@
+@charset "UTF-8";
+.vGisWeb_legend_switch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    outline: none;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+    background: url("../imgs/legend/legend.png") no-repeat 3px 3px transparent;
+    cursor: pointer;
+}
+
+.vGisWeb_legend_box {
+    position: absolute;
+    top: 42px;
+    right: 20px;
+    outline: none;
+    width: 230px;
+    display: none;
+    background-color: white;
+    z-index: 100000;
+}
+
+.vGisWeb_legend_box .oneLine {
+    height: 18px;
+    line-height: 18px;
+}
+
+/************************************************rangeColor******************************************************************************/
+.vGisWeb_legend_box > .business_rangeColor {
+    width: 100%;
+    margin: 10px auto;
+}
+
+/*业务指标中一条指标记录*/
+.vGisWeb_legend_box > .business_rangeColor > div.oneLine {
+    padding-left: 40px;
+}
+
+.vGisWeb_legend_box > .business_rangeColor > div.oneLine:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.vGisWeb_legend_box > .business_rangeColor > div.oneLine > div {
+    float: left;
+}
+
+/*颜色*/
+.vGisWeb_legend_box > .business_rangeColor > div.oneLine > div:first-child {
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+    margin-right: 3px;
+}
+
+/*指标显示信息*/
+.vGisWeb_legend_box > .business_rangeColor > div.oneLine > div:last-child {
+    height: 18px;
+    line-height: 18px;
+    width: 169px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/************************************************singleColor******************************************************************************/
+
+.vGisWeb_legend_box > .business_singleColor {
+    width: 100%;
+    margin: 10px auto;
+}
+
+/*业务指标中一条指标记录*/
+.vGisWeb_legend_box > .business_singleColor > div.oneLine {
+    padding-left: 40px;
+}
+
+.vGisWeb_legend_box > .business_singleColor > div.oneLine:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.vGisWeb_legend_box > .business_singleColor > div.oneLine > div {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+
+/*颜色*/
+.vGisWeb_legend_box > .business_singleColor > div.oneLine > div:first-child {
+    width: 18px;
+    margin-right: 3px;
+}
+
+/*指标显示信息*/
+.vGisWeb_legend_box > .business_singleColor > div.oneLine > div:last-child {
+    width: 169px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/***********************************************************************************************************/
+.vGisWeb_legend_box > .business_singleSymbol {
+    width: 100%;
+    margin: 10px auto;
+}
+
+/*业务指标中一条指标记录*/
+.vGisWeb_legend_box > .business_singleSymbol > div.oneLine {
+    padding-left: 40px;
+    height: 18px;
+}
+
+.vGisWeb_legend_box > .business_singleSymbol > div.oneLine:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.vGisWeb_legend_box > .business_singleSymbol > div.oneLine > div {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+
+/*颜色*/
+.vGisWeb_legend_box > .business_singleSymbol > div.oneLine > div:first-child {
+    width: 16px;
+    margin-right: 3px;
+}
+
+/*指标显示信息*/
+.vGisWeb_legend_box > .business_singleSymbol > div.oneLine > div:last-child {
+    width: 169px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/************************************************************************************************************/
+
+/***图例标题*/
+.vGisWeb_legend_box .legendTitle {
+    height: 30px;
+}
+
+.vGisWeb_legend_box .legendTitle > .legendTitleLeft {
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+
+.vGisWeb_legend_box .legendTitle > .legendTitleRight {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+/************************************************************************************************************/

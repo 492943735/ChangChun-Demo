@@ -1,0 +1,516 @@
+span.normal_font {
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #00fffc;
+}
+
+.save_story_main {
+    background-color: #1a272b;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 23;
+    position: absolute;
+    opacity: 0.97;
+}
+
+.save_story_title {
+    margin-top: 5rem;
+    line-height: 4rem;
+    padding-left: 1rem;
+    background-color: black;
+    color: #03eae9;
+}
+
+.save_story_foot {
+	text-align: center;
+}
+
+.save_story_foot input {
+	text-align: center;
+    width: 16rem;
+    height: 4rem;
+    border: 0;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    background-size: 100% 100%;
+    background-color: #1a262b;
+}
+
+.save_story_body {
+    width: 100%;
+    height: 70%;
+    padding: 2% 9.5% 2% 9.5%;
+}
+
+.save_story_body .error_tips {
+    text-align: center;
+    color: red;
+}
+
+.save_story_content {
+    width: 100%;
+    height: 70%;
+    border: 0.1rem solid #77b6b5;
+    position: relative;
+    padding: 2.5rem;
+}
+
+.save_story_content_foot {
+	padding: 3rem;
+	color: #00fffc;
+}
+
+.save_story_content_foot input[type=text] {
+	margin-left: 1rem;
+	background-color: #19262A;
+	width: 25rem;
+	border: 2px solid #086D6C;
+}
+
+.save_story_content_foot .story_auth {
+	margin-left: 5rem;
+}
+
+.story_auth input {
+    margin-right: 1rem;
+}
+
+.save_story_tab {
+    position: absolute;
+    line-height: 5rem;
+    top: -2.5rem;
+}
+
+.save_story_tab span {
+    margin-left: 5rem;
+    padding: 1rem;
+    background-color: #1a272b;
+    color: #efefef;
+}
+
+.save_story_tab span.menuActive {
+	color: #03eae9;
+}
+
+.save_story_tab span:hover {
+    cursor: pointer;
+}
+
+.save_story_tab_box {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+/*-------------------preview start---------------*/
+.preview-template * {
+	cursor: default!important;
+}
+
+.preview-template {
+	height:90%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.previewBand, .previewThreshold , .previewIndicator{
+	height:100%;
+	width: 30%;
+	padding-top: 3%;
+}
+
+.previewSmallWindow{
+	float: left;
+}
+
+.bandBorder, .thresholdBorder{
+	border: 0.1rem solid #77b6b5;
+    width: 75%;
+    height: 21.096333rem;
+    overflow: hidden;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 1rem;
+}
+
+.previewBandItem, .previewThresholdItem {
+    padding: 0.833333rem 0 0.833333rem 0.833333rem;
+	position: relative;
+}
+
+.previewSmallWindow + .previewSmallWindow{
+	margin-left: 5%;
+} 
+
+.preview_checkBoxTxt {
+	top: 1.2rem!important;
+}
+/*-- band start --*/
+
+.BandTitle{
+	margin-bottom: 2rem;
+	color: #00fffc;
+}
+
+.previewBandScroll{
+	width: 97.274744%;
+    overflow-y: auto;
+    position: relative;
+    height: 18.833333rem;
+}
+
+.chooseWidth{
+	position: absolute;
+	width: 1.666666rem;
+	height: 1.666666rem;
+	visibility: hidden;
+}
+
+.checkBandText{
+	font-size: 1.166666rem;
+	color: #306A6B;
+	padding-left: 0.833333rem;
+}
+
+.checkBoxChecked{
+	color: #00fffc!important;
+}
+
+.previewInputImg{
+	display: inline-block;
+	width: 1.666666rem;
+    height: 1.666666rem;
+    line-height: 1.666666rem;
+	background-color: transparent;
+	border: .1rem solid #306A6B;
+	position: relative;
+	top: 0.416666rem;
+}
+
+.previewInputImgChecked{
+	background-color: #29CCCF;
+	overflow: hidden;
+}
+
+.glyphicon-ok {
+    line-height: inherit;
+    height: 100%;
+    top: -1px;
+}
+.previewCheckedColor {
+	color: rgb(51,51,51);
+	font-weight: normal;
+    font-size: 1rem;
+}
+/*-- band end --*/
+/*-- threshold start --*/
+
+.previewThreshold{
+	
+}
+
+.ThresholeTitle{
+	margin-bottom: 2rem;
+	color: #00fffc;
+}
+
+.chooseThreshold{
+	position: absolute;
+	width: 1.666666rem;
+	height: 1.666666rem;
+	visibility: hidden;
+	margin: 0;
+}
+
+.thresholdCheckBox{
+	cursor: pointer;
+}
+
+.checkthresholdTxt{
+	font-size: 1.166666rem;
+    color: #306A6B;
+    padding-left: 0.833333rem;
+}
+
+.thresholdCheckedColor {
+    color: #333!important;
+    font-weight: normal!important;
+    font-size: 1rem!important;
+    position: absolute!important;
+    top: 0px!important
+}
+
+.thresholdNotCheckedTxt {
+	color: #306A6B!important;
+}
+
+.notConfigThresholdData {
+	font-size: 2rem;
+    text-align: center;
+    color: #108e8e;
+    height: 100%;
+    padding-top: 8.00775rem;
+}
+
+/*-- threshold end --*/
+/*-- indicator start --*/
+
+.previewIndicator{
+	font-size: 1.166666rem;
+	color: #306A6B;
+	position: relative;
+}
+
+.indicatorLabel {
+	margin-right: 10%;
+    margin-top: 5%;
+}
+
+/*-- indicator end --*/
+
+/*-------------------preview end---------------*/
+
+/*------------- filter  start -----------------*/
+.filter-body .btnModel {
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    list-style: none;
+    border: none;
+    background: #00fffc;
+    border-radius: 10%;
+    color: #111;
+}
+
+.btn_gray {
+	background-color: #999!important;
+}
+/*------------- filter  end -----------------*/
+
+/*-------------- Summary start ----------------*/
+.summary_main input, .summary_main textarea {
+	background-color: #19262A;
+	border: 2px solid #116465;
+}
+.summary_main{
+}
+.summary_main input {
+    width: 25rem;
+}
+
+.summary_main textarea {
+    width: 50%;
+    min-height: 10rem;
+    padding: 0rem 0.5rem;
+}
+
+.summary_main label {
+	text-align: right;
+}
+
+.summary_main .titlePlay, .summary_main .conclusionPlay, .summary_main .suggestionPlay {
+	margin: 1rem 0 2rem 0;
+}
+/*-------------- Summary end ----------------*/
+
+/*-------------- open start ----------------*/
+.open_story_main .removeLabel {
+	right: 0.5rem!important;
+}
+.open_story_main {
+	background-color: #1a272b;
+    font-size: 1.5rem;
+    color: #77B6B5;
+    width: 100%;
+    height: 100%;
+    z-index: 23;
+    position: absolute;
+    opacity: 0.97;
+}
+
+.open_story_title {
+    margin-top: 5rem;
+    line-height: 4rem;
+    padding-left: 1rem;
+    background-color: black;
+}
+
+.open_story_body {
+    width: 100%;
+    height: 60%;
+    padding: 2% 9.5% 0% 9.5%;
+}
+
+.open_story_content {
+	width: 100%;
+    height: 100%;
+    border: 0.1rem solid #77b6b5;
+    position: relative;
+    padding: 2.5rem;
+}
+
+.openStoryScroll{
+	width: 100%;
+    overflow-y: auto;
+    position: relative;
+    height: 100%;
+}
+
+.storyLineArea {
+	
+}
+
+.storyLabel {
+	float: left;
+    width: 17rem;
+    height: 4rem;
+    margin: 1.5rem 1rem 1.5rem 1.3rem;
+    min-width: 190px;
+    position: relative;
+    cursor: pointer;
+	background-color: black;
+	text-align: center;
+    color: #5a8a89;
+}
+
+.storyDelete {
+	background-image: url(../../pages/images/onlyDelete.png)!important;
+}
+
+.storyLabelSelected {
+	float: left;
+    width: 17rem;
+    height: 4rem;
+    margin: 1.5rem 1rem 1.5rem 2rem;
+    min-width: 190px;
+    position: relative;
+    cursor: pointer;
+	background-color: #153d47;
+	text-align: center;
+    color: #00fffc;
+}
+
+.storyLineText {
+	height: 4rem;
+    line-height: 4rem;
+    border: 0;
+    width: 100%;
+    margin-right: 1.5rem;
+    padding-right: 1.583333rem;
+    padding-left: 0.583333rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.storyLineTextSelected {
+	height: 4rem;
+    line-height: 4rem;
+    border: 0;
+    width: 100%;
+    color: #00fffc;
+    margin-right: 1.5rem;
+    padding-right: 1.583333rem;
+}
+
+.storyLineCheckBox {
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 0.2rem;
+    margin: 0;
+    right: 0.2rem;
+}
+
+.open_story_foot {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.open_story_foot input {
+    text-align: center;
+    width: 16rem;
+    height: 4rem;
+    border: 0;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    background-size: 100% 100%;
+    background-color: #1a262b;
+}
+.deleteStoryBtnActived {
+	background-color: #065569!important;
+}
+/*-------------- open end ----------------*/
+
+/*----------summary alert---start-------*/
+.tipTitleMsg{
+	font-size: 1.8rem;
+	display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.scenario_title {
+    color: #00fffc;
+    font-size: 1.5rem;
+}
+.scenario_txt {
+    word-wrap: break-word;
+    word-break: break-word;
+    color: #999999;
+    font-size: 1.5rem;
+}
+.scenario_tipBox{
+    margin: calc(20vh) auto;
+    top: 0;
+    width: 35rem;
+    height: auto;
+    min-width: 470px;
+    background-image: url("../../pages/images/scenario_bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+} 
+
+.scenario_tipBox .tipTitle {
+    color: #00fffc;
+    position: inherit;
+    padding: 0 3.5rem;
+}
+.scenarioBtnBox{
+	text-align: center;
+}
+.scenarioBtnBox button {
+    width: 7rem;
+    height: 2rem;
+    border: 0;
+    margin: 0 2rem 1rem 2rem;
+    font-size: 1.1rem;
+    background-size: 100% 100%;
+    outline: none;
+}
+.scenario_btnBox {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.scenario_tipMessage {
+    margin: 1.5rem 0rem 1.5rem 0rem;
+    text-align: left;
+    max-height: 18.333333rem;
+    width: 100%;
+    padding: 0 4.5rem;
+    overflow-y: auto;
+}
+.scenario_tipMessage p{
+	margin: 1rem 0;
+	width: 98%
+}
+.scen_dialog .title {
+	text-align: center;
+	margin: 0.7rem;
+}
+
+/*----------summary alert---end-------*/

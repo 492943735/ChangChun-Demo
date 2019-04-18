@@ -1,0 +1,112 @@
+.timeBody {
+    padding: 0 0.8rem 0 0.8rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1.5rem;
+    display: flex;
+    width: 100%;
+    height: 1.6rem;
+}
+.timeTitle{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    line-height: 1.6rem;
+}
+.timeInput{
+	width: 50%;
+    height: 100%;
+    position: relative;
+}
+.timePickInput{
+	height: 1.6rem;
+    width: 100%;
+    list-style: none;
+    outline: none;
+    border: none;
+    border: 1px solid #00fffc;
+    background: #1b262b;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #143c45;
+}
+.timeSubmitBox{
+    width: 30%;
+    text-align: right;
+    height: 100%;
+}
+.timeSubmitBtn{
+	height: 100%;
+    background-color: transparent;
+    border: none;
+    background-image: url(../images/btn_time_control.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 75%;
+}
+.timeBtnChange{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.timeBtnChange span{
+    display: inline-block;
+    width: 100%;
+    height: 42.5%;
+    margin: 5% 0;
+    cursor: pointer;
+}
+.timeSubmitBtn.ui-state-hover{
+	background-color: transparent!important;
+	background-image: url(../images/btn_time_control.png)!important;
+    background-repeat: no-repeat!important;
+    background-size: 100% 100%!important;
+	color: #00fffc!important;
+}
+.timePickPrevious{
+	background-image: url(../images/ic_up_time_control.png)!important;
+	background-repeat: no-repeat!important;
+    background-size: 100% 100%!important;
+}
+.timePickNext{
+	background-image: url(../images/ic_down_time_control.png)!important;
+	background-repeat: no-repeat!important;
+    background-size: 100% 100%!important;
+}
+.timepickHour{
+	background-color: #0f4d50;
+	cursor: pointer;
+}
+.timepickMs{
+	color: #999999;
+}
+.timeShowBox{
+    width: 165%;
+    position: absolute;
+    left: -32.5%;
+    top: -10rem;
+    background-color: #143c45;
+    border: 1px solid #00fffc;
+    z-index: 5;
+    transition: top 0.2s;
+}
+.timeStyle{
+	display: inline-block;
+    width: 16.666666%;
+    text-align: center;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+.canTimeStyle:hover{
+	background-color: #0f4d50;
+	cursor: pointer;
+}
+.timeSlected{
+	background-color: #207879;
+}
+.timeSelectedDisable{
+	color: #999;
+}

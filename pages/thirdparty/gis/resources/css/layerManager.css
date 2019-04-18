@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/*图层管理器默认样式*/
+
+.gis_layer_manager {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 19999;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+/*开关*/
+.gis_layer_manager > .switcher {
+    width: 30px;
+    background-color: rgba(0, 60, 136, .3);
+    text-align: center;
+    cursor: pointer;
+}
+
+/*图层列表外层容器*/
+.gis_layer_manager > .layer_list {
+    position: absolute;
+    right: 0;
+    width: 211px;
+    text-align: left;
+    background-color: rgba(0, 60, 136, .6);
+    border-top-left-radius: 2px;
+    -moz-border-top-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    -moz-border-bottom-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    display: none;
+}
+
+/*one record in line*/
+.gis_layer_manager > .layer_list > .layer {
+    height: 28px;
+    line-height: 28px;
+    margin-top: 1px;
+    width: 100%;
+    position: relative;
+}
+
+.gis_layer_manager > .layer_list > .layer:not(:first-child) {
+    border-top: 1px solid rgba(241, 202, 202, 0.31);
+}
+
+.gis_layer_manager > .layer_list > .layer > div {
+    height: 28px;
+    line-height: 28px;
+    float: left;
+}
+
+/*checkbox*/
+.gis_layer_manager > .layer_list > .layer > .controller {
+    width: 15px;
+}
+
+.gis_layer_manager > .layer_list > .layer > .controller > input.checkbox {
+    cursor: pointer;
+    margin-top: 9px;
+    outline: none;
+    border: none;
+}
+
+/*layername*/
+.gis_layer_manager > .layer_list > .layer > .layer_name {
+    width: 150px;
+    margin-left: 3px;
+    text-indent: 3px;
+    overflow: hidden;
+}
+
+/*调整图层垂直高度按钮*/
+.gis_layer_manager > .layer_list > .layer > .z_index_btn_box {
+    width: 40px;
+    margin-left: 3px;
+    cursor: pointer
+}
+
+.gis_layer_manager > .layer_list > .layer > .z_index_btn_box > div {
+    float: left;
+}
+
+.gis_layer_manager > .layer_list > .layer > .z_index_btn_box > .btn:nth-child(1) {
+    background: url("../imgs/upLayer.png") no-repeat 0 6px rgba(0, 191, 255, 0);
+    width: 16px;
+    height: 28px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.gis_layer_manager > .layer_list > .layer > .z_index_btn_box > .btn:nth-child(2) {
+    background: url("../imgs/downLayer.png") no-repeat 0 7px rgba(0, 191, 255, 0);
+    width: 16px;
+    height: 28px;
+    cursor: pointer
+}
+
+/*调整图层垂直高度按钮*/
+
+.bLayerManager {
+    position: absolute;
+    top: 44px;
+    right: 10px;
+    z-index: 5;
+}
+
+.bLayerManager .header {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    height: 35px;
+    color: #fff;
+    background: rgba(49, 177, 209, 0.9);
+}
+
+.bLayerManager .header .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: inherit;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-bottom: none;
+    font-size: 14px;
+    color: #fff;
+    text-indent: 10px;
+    line-height: 35px;
+    height: 100%;
+}
+
+.bLayerManager .header .closeIcon {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+
+    background-color: rgba(49, 177, 209, 0.9);
+    line-height: 12px;
+    width: 12px;
+    border: none;
+    text-decoration: none;
+    position: absolute;
+    top: 12px;
+    right: 13px;
+}
+
+.bLayerManager .header .closeIcon:hover {
+    cursor: pointer;
+}
+
+.bLayerManager .content {
+    width: 350px;
+    padding: 10px;
+    background-color: #ffffff;
+    display: table;
+    border-bottom: 3px solid rgba(49, 177, 209, 0.9);
+    border-left: 1px solid rgba(49, 177, 209, 0.9);
+    border-right: 1px solid rgba(49, 177, 209, 0.9);
+}
+
+.bLayerManager .content .layerItem {
+    display: table-row;
+    line-height: 30px;
+}
+
+.bLayerManager .content .layerItem > * {
+    display: table-cell;
+}
+
+.bLayerManager .content .layerItem .visible_check {
+    width: 13px;
+}
+
+.bLayerManager .content .layerItem .layerIcon {
+    width: 35px;
+    padding: 0 5px;
+}
+
+.bLayerManager .content .layerItem .layerName {
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #666666;
+    width: 108px;
+}
+
+.bLayerManager .content .layerItem .range {
+    vertical-align: sub;
+    width: 110px;
+}
+
+.bLayerManager .layerItem .label_block {
+    padding-left: 5px;
+    width: 40px;
+}
+
+.bLayerManager .layerItem .label_block .active_label {
+    color: #247F98;
+}
+
+.bLayerManager .layerItem .label_block .inactive_label {
+    color: #99a0a7;
+}
+
+.bLayerManager .layerItem .active_up_arrow {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/upLayer.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .inactive_up_arrow {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/upLayerGray.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .active_down_arrow {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/downLayer.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .inactive_down_arrow {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/downLayerGray.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .POLYGON_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/polygon_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .POLYGON_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/polygon.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .POINT_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/point_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .POINT_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/point.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .CIRCLEPOINT_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/point_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .CIRCLEPOINT_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/point.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .NE_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/ne_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .NE_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/ne.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .GRID_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/grid_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .GRID_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/grid.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .SERVICEPOLYGON_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/polygon_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .SERVICEPOLYGON_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/polygon.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .SERVICEPOINT_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/point_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .SERVICEPOINT_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/point.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .SERVICELINE_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/line_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .SERVICELINE_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/line.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .LINE_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/line_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .LINE_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/line.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .BASELAYER_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/baselayer_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .BASELAYER_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/baselayer.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .HEATMAP_ICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/point_i.png") no-repeat center;
+    background-size: 18px;
+}
+
+.bLayerManager .layerItem .HEATMAP_GRAYICON {
+    height: 18px;
+    width: 18px;
+    background: url("../imgs/legend/point.png") no-repeat center;
+    background-size: 18px;
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+div[class='layer_legend_container_for_one_map'] {
+    position: absolute;
+    top: 110px;
+    right: 30px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+
+    box-shadow: 1px 1px 7px 2px gray;
+    -moz-box-shadow: 1px 1px 7px 2px gray;
+    -webkit-box-shadow: 1px 1px 7px 2px gray;
+    z-index: 1;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer > .one_legend_line {
+    height: 25px;
+    line-height: 25px;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer > .one_legend_line:hover {
+    background-color: #00BFFF;
+}
+
+.layer_legend_container_for_one_map > .one_legend_box_one_layer > .one_legend_line > div {
+    float: left;
+}
+
+.layer_legend_container_for_one_map > .one_legend_range__box_one_layer {
+    position:relative;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+
+}
+
+.layer_legend_container_for_one_map > .one_legend_range__box_one_layer > .one_legend_line {
+    height: 25px;
+    line-height: 25px;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.layer_legend_container_for_one_map > .one_legend_range__box_one_layer > .one_legend_line:hover {
+    background-color: #00BFFF;
+}
+
+.layer_legend_container_for_one_map > .one_legend_range__box_one_layer > .one_legend_line > div {
+    float: left;
+}

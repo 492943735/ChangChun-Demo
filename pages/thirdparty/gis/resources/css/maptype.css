@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.map_type_toolbar_container {
+    position: absolute;
+    left: 15px;
+    bottom: 35px;
+    z-index: 1;
+}
+
+.small_map_button {
+    float: left;
+    margin-right: 1px;
+    background-color: transparent;
+    height: 72px;
+    width: 72px;
+}
+
+.map_type_toolbar_container > .road {
+    background-image: url("../imgs/maptype/road.png");
+}
+
+.map_type_toolbar_container > .road:hover {
+    background-image: url("../imgs/maptype/road01.png");
+}
+
+.map_type_toolbar_container > .satellite {
+    background-image: url("../imgs/maptype/satellite.png");
+}
+
+.map_type_toolbar_container > .satellite:hover {
+    background-image: url("../imgs/maptype/satellite01.png");
+}
+
+.map_type_toolbar_container > .terrain {
+    background-image: url("../imgs/maptype/terrain.png");
+}
+
+.map_type_toolbar_container > .terrain:hover {
+    background-image: url("../imgs/maptype/terrain01.png");
+}
+
+.map_type_toolbar_container > .hybrid {
+    background-image: url("../imgs/maptype/hybrid.png");
+}
+
+.map_type_toolbar_container > .hybrid:hover {
+    background-image: url("../imgs/maptype/hybrid01.png");
+}

@@ -1,0 +1,60 @@
+.locationSetUp {
+    float: right;
+    margin-right: 1.2rem;
+} 
+
+.locationSetUp img{
+	width: 1.2rem;
+}
+
+.locationIcon {
+    width: 1.666666rem;
+}
+
+.locationSelectList {
+    width: 100%;
+}
+
+.previewLocationImg {
+	display: inline-block;
+}
+
+.settingSelectBox {
+ 	margin-left: 1rem;
+  	width: 10rem;
+  	font-size: 1.5rem;
+ 	display: inline-block;
+  	text-align: right;
+}
+
+.img_listBox_location {
+    color: #00fffd;
+    font-size: 2rem;
+    border: none;
+    width: 56rem;
+    margin: auto;
+    background-image: url(../../pages/images/scenario_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.locationClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 3.5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #6f928e;
+    cursor: pointer;
+    text-align: center;
+}
+
+.colorChoose_context_location {
+    color: #fff;
+    margin-top: 15%;
+}

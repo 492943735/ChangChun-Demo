@@ -1,0 +1,311 @@
+@charset "UTF-8";
+@import url(layerManager.css);
+@import url(legend.css);
+@import url(legendInforSight.css);
+@import url(legendSlider.css);
+@import url(popup.css);
+@import url(component.css);
+@import url(maptype.css);
+@import url(searchUI.css);
+
+.map_background {
+    background-color: white;
+}
+
+/*覆盖ol.css中的类，为了dashboard适配不同的设备*/
+.ol-attribution ul {
+    margin: 0;
+    padding: 0 .5em;
+    font-size: .7em;
+    line-height: 1.375em;
+    color: #000;
+    text-shadow: 0 0 2px #fff
+}
+
+/*scaleline*/
+.vGisWeb_scale-line-gis {
+    background: #95b9e6;
+    background: rgba(0, 60, 136, .3);
+    border-radius: 4px;
+    bottom: 8px;
+    left: 10px;
+    padding: 2px;
+    position: absolute;
+    color: #ffffff;
+    display: block;
+    z-index: 1;
+}
+
+/*鼠标位置*/
+.vGisWeb_mouse-position-gis {
+    background: #95b9e6;
+    background: rgba(0, 60, 136, .3);
+    position: absolute;
+    bottom: 8px;
+    left: 200px;
+    padding: 2px;
+    position: absolute;
+    color: #ffffff;
+    border-radius: 5px;
+    display: block;
+    z-index: 1;
+}
+
+/*缩放控件*/
+.vGisWeb_olZoom_custom {
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.vGisWeb_olZoom_custom_un {
+    display: none;
+}
+
+/*显示级别控件样式*/
+.vGisWeb_custom_zoom_ctrl {
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: #7C99BD;
+    height: 18.797px;
+    color: white;
+    font-weight: bolder;
+    line-height: 18.797px;
+    width: 25.08px;
+    margin-left: 1px;
+}
+
+/**popup style begin***/
+.ol-popupContainer-class {
+    display: none;
+    position: absolute;
+    background-color: none;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+}
+
+.ol-popupContainer-class:after, .ol-popupContainer-class:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popupContainer-class:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popupContainer-class:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+.ol-popupClose-class {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.ol-popupClose-class:after {
+    content: "✖";
+}
+
+.ol-popupClose-class:hover {
+    cursor: pointer;
+}
+
+/*悬浮弹出框样式*/
+.ol-susPopupContainer-class {
+    display: none;
+    position: absolute;
+    background-color: white;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+}
+
+.ol-susPopupContainer-class:after, .ol-susPopupContainer-class:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-susPopupContainer-class:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-susPopupContainer-class:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+.im3-measure {
+    cursor: url(../imgs/ruler.cur), crosshair;
+}
+
+.measure-tooltip {
+    cursor: inherit;
+    border: 1px solid rgb(1, 138, 255);
+    padding: 3px 5px;
+    white-space: nowrap;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 12px;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: inherit;
+}
+
+.measure-tooltip.mile {
+    color: #7a7a7a;
+    position: absolute;
+    left: 5px;
+    padding: 1px 4px 1px 4px;
+    line-height: 17px;
+    background: #ffffff;
+    border: 1px solid #888888;
+    border-radius: 4px;
+}
+
+.measure-close {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    background: url(../imgs/close.png) no-repeat;
+    background-size: 12px;
+}
+.measure-close-legend {
+    position: absolute;
+    top:0px;
+    right:0px;
+    z-index: 100;
+    padding: 0;
+    margin-left:140px;
+    border: 0;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    background: url(../imgs/close.png) no-repeat;
+    background-size: 12px;
+}
+
+
+.vGisWeb-restrict-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vGisWeb_lightBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 0 3px gray;
+}
+
+.vGisWeb_lightBox .vGisWeb_lightBox_header {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.vGisWeb_lightBox .vGisWeb_lightBox_title {
+    color: #208098;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.vGisWeb_lightBox .vGisWeb_lightBox_closeIcon {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: #208098;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vGisWeb_lightBox .exportImage_content {
+    padding: 15px 20px 20px 20px;
+}
+
+.vGisWeb_lightBox .exportImage_group {
+    margin-bottom: 10px;
+}
+
+.vGisWeb_lightBox .exportImage_group label {
+    width: 90px;
+    display: inline-block;
+    color: #666666;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.vGisWeb_lightBox .exportImage_group select {
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.vGisWeb_lightBox .exportImage_group select option {
+    /*width: 200px;*/
+    height: 30px;
+}
+
+.vGisWeb_lightBox .vGisWeb_lightBox_btnGroup {
+    text-align: center;
+    display: block;
+}
+
+.vGisWeb_lightBox .vGisWeb_lightBox_btnGroup .btn {
+    margin: 0 10px;
+}
+

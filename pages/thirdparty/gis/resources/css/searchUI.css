@@ -1,0 +1,236 @@
+@charset "UTF-8";
+.search {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top: 54px;
+    z-index: 1;
+}
+
+.search > .header {
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    background-color: rgba(49, 177, 209, 0.9);
+    color: white;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.search > .header > .close-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.search .body {
+    position: relative;
+}
+
+/*tab*/
+.search .tab > div {
+    border-bottom: 1px solid #E0FFFF;
+}
+
+.search .tab > div.tab-online {
+    width: 149.5px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    left: 0;
+}
+
+.search .tab > div.tab-offline {
+    width: 149.5px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    right: 0;
+}
+
+.search .tab > div.border {
+    position: absolute;
+    left: 149.5px;
+    width: 1px;
+    height: 24px;
+    background-color: #E0FFFF;
+}
+
+.search .tab > div:hover {
+    background-color: #B0E2FF;
+}
+
+/*content-online*/
+.search .body > .content-online {
+    display: block;
+    font-size: 14px;
+}
+
+.search .body > .content-online > .header {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+}
+
+.search .body > .content-online > .header input {
+    width: 288px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid skyblue;
+    height: 25px;
+}
+
+.search .body > .content-online > .header .searchBtn {
+    background-image: url(../imgs/search/search.png);
+    background-position: 4px 4px;
+    background-size: 21px 19px;
+    height: 25px;
+    width: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    top: -1px;
+    right: -3px;
+}
+
+.search .body > .content-online > .body {
+    height: 112px;
+    width: 298px;
+    position: absolute;
+    top: 56px;
+    overflow: auto;
+    left: 0;
+}
+
+.search .body > .content-online > .body > div {
+    text-indent: 5px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.search .body > .content-online > .body > div:hover {
+    background-color: deepskyblue;
+}
+
+/*content-offline*/
+.search .body > .content-offline {
+    position: absolute;
+    top: 35px;
+    font-size: 14px;
+    padding-left: 10px;
+    display: none;
+}
+
+.search .body > .content-offline > div {
+    height: 40px;
+    line-height: 40px;
+}
+
+.search .body > .content-offline select {
+    padding: 0 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid skyblue;
+    height: 25px;
+    width: 180px;
+}
+
+.search .body > .content-offline > .layer-val {
+    position: relative;
+}
+
+.search .body > .content-offline .layer-val > input {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid skyblue;
+    height: 25px;
+    width: 180px;
+}
+
+.search .body > .content-offline .searchBtn {
+    background-image: url(../imgs/search/search.png);
+    background-position: 4px 4px;
+    background-size: 21px 19px;
+    height: 25px;
+    width: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 1px;
+}
+
+/* 自定义元素查询结果显示面板*/
+
+.search > .featureList {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+    background-color: white;
+}
+
+.search > .featureList > div:first-child {
+    width: 300px;
+    height: 20px;
+    line-height: 20px;
+    background-color: skyblue;
+    color: white;
+    font-size: 13px;
+    text-indent: 5px;
+    font-weight: bold;
+}
+
+.search > .featureList > div:first-child > div {
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.search > .featureList > div:last-child {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    cursor: pointer;
+    height: 180px;
+    overflow: auto;
+}
+
+.search > .featureList > div:last-child > div {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    text-indent: 15px;
+}
+
+.search > .featureList > div:last-child > div:hover {
+    background-color: deepskyblue;
+}
+
+.search .content > div {
+    width: 284px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

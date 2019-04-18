@@ -1,0 +1,389 @@
+.modelColorBg2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 21;
+	background-color: rgba(35, 35, 35, 0.8);
+}
+
+.colorChoose_context2 {
+	margin-top: 10% !important;
+	color: #999;
+}
+
+.threshold_table_bordered {
+	width:85%;
+	margin : 0 auto;
+}
+
+.table_bordered td {
+	height: 3rem;
+}
+
+.rangeType2 {
+	font-size: 1.5rem;
+    width: 85%;
+    margin: 0 auto 1rem auto;
+    text-align: right;
+    padding-right: 4.75rem;
+    color: #00fffc;
+}
+
+.threshold_rangeType_select {
+	background-color: transparent;
+	font-size: 1.2rem;
+	padding: 3px;
+	border: 1px solid #3d6f82!important;
+}
+
+.thresholdSelectOptions {
+	background: #365858;
+}
+
+#scene_rangeTypeBox small {
+	padding: 0 20px;
+}
+
+#scene_rangeTypeBox_small {
+	margin-left: 40px;
+}
+
+#threshold_table td {
+	position: relative;
+	border: 1px solid #3d6f82;
+	vertical-align: middle;
+	text-align: center;
+	height: 2.5rem;
+}
+#threshold_table td:last-of-type {
+	width: 4.75rem!important;
+}
+#threshold_table td i {
+	position: absolute;
+	padding-left: 14px;
+	top: -4px;
+	padding-top: 14px;
+	margin-left: 50%;
+}
+
+#threshold_table td i img {
+	width: 1.5rem;
+}
+
+.threshold_content {
+	padding: 4rem 3rem;
+	border: none;
+	width:100%;
+	background-image: url(../../pages/images/bg_threshold_down.png);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.threshold_input {
+	width: 80%;
+	height: 100%;
+	color: #00fffc;
+	background: transparent;
+	border: none;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+.colorChoose-btn2 {
+	text-align: center;
+	position: relative;
+	margin: 2rem;
+}
+
+.color_box2 {
+	border: 1px solid teal;
+	border-radius: 15px;
+	width: 90px;
+	position: absolute;
+	top: 12%;
+	right: 0.78125rem;
+}
+
+.color_box2 ul {
+	text-align: center;
+}
+
+.color_li2 {
+	display: inline-block;
+	width: 30px;
+	margin: 5px 2px;
+}
+
+.color_block2 {
+	display: inline-block;
+	margin: 0 auto;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: #c9302c;
+	border-radius: 5px;
+	margin-right: 1rem;
+	margin-left: 5px;
+	position: relative;
+}
+
+.color_block2 img {
+	width: 0.8rem;
+	position: absolute;
+	left: 1.8rem;
+	top: 0.5rem;
+}
+
+.caret {
+	margin-bottom: 15px;
+}
+
+.tooltip.right {
+	z-index: 9999999;
+	padding: 0 5px;
+	margin-left: 3px;
+}
+
+.threshold_color_dig_minus {
+	opacity: 0.3;
+}
+
+.Threshold_row {
+	padding: 0.833333rem 0 0.833333rem 1.666666rem;
+	position: relative;
+	overflow: hidden;
+	table-layout: fixed;
+}
+
+.leftSidebarScroll.Threshold_leftSidebarScroll {
+	width: 100%;
+    overflow-y: auto;
+    position: relative;
+    top: 1rem;
+    height: 14.33333rem;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.checkBoxTxt.Threshold_checkBoxTxt {
+	font-size: 1.166666rem;
+	color: #00fffc;
+	padding-left: 0.833333rem;
+	max-width: 69%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: absolute;
+}
+
+}
+.ThresholdTitleText.widthColorTxt {
+	color: #00fffc;
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+	text-align: left;
+	height: 1.8rem;
+	overflow: hidden;
+	table-layout: fixed;
+}
+
+.inputImg {
+	overflow: hidden;
+}
+.inputImg  i.fa-check{
+	font-size: 1.40625rem;
+}
+.ThresholdTitleText.widthColorTxt span:first-child {
+	color: #fff;
+	max-width: 60%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.thresholdSetUp img {
+	width: 1.2rem;
+}
+
+.thresholdSetUp {
+	float: right;
+	margin-right: 1.2rem;
+}
+
+.thresholdUnit {
+	color: #00fffc;
+	max-width: 7%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.addOpacity {
+	opacity: 0.3;
+}
+
+.thresholdSetUpBackground {
+	margin: 0 auto;
+    width: 46.666667%;
+    min-width: 700px;
+    position: relative;
+}
+
+.thresholdSetUpBackgroundTitle {
+	position: relative;
+	border: none;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2.0rem;
+    color: #999;
+    text-overflow: ellipsis;
+    background-image: url(../../pages/images/bg_threshold_up.png);
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 3rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.thresholdSetUpBackgroundTitle_Uib{
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.thresholdClose{
+    position: absolute;
+    right: 2rem;
+    top: 20%;
+    height: 40%;
+    cursor: pointer;
+}
+
+.thresholdSetUpBackgroundImg {
+	position: absolute;
+	left: -3%;
+	height: 100%;
+	z-index: -9;
+	width: 96%;
+}
+
+.thresholdSetUpTdSpan {
+	float: right;
+}
+
+.btnImg {
+	width: 10rem;
+	position: absolute;
+	left: 23.9rem;
+	height: 2.6rem;
+	z-index: -1;
+	top: -0.1rem;
+}
+
+.btn-warning.btn, .btn-success.btn {
+	color: #8bc6da;
+}
+
+.btn-warning.btn img {
+	left: 8.5rem;
+}
+
+.btn-success.btn img {
+	left: 39.2rem;
+}
+
+.threshold_btn_sure {
+	background: url(../../pages/images/btnBgActive.png) no-repeat;
+	color: #1a262b;
+	width: 12rem;
+	height: 2.6rem;
+	border: 0;
+	margin-left: 1rem;
+	font-size: 1.5rem;
+	background-size: 100% 100%;
+	background-color: #1a262b;
+}
+
+.threshold_btn_no {
+	background: url(../../pages/images/btnBg.png) no-repeat;
+	color: #77B6B5;
+	width: 13rem;
+	height: 2.6rem;
+	border: 0;
+	margin-left: 1rem;
+	font-size: 1.5rem;
+	background-size: 100% 100%;
+	background-color: #1a262b;
+}
+
+.threshold_btn_no:active {
+	background: url(../../pages/images/btnBgActive.png) no-repeat;
+	background-size: 100% 100%;
+	color: #000000;
+}
+
+.threshold_td_noborder {
+	border: none !important;
+}
+
+#scene_colorChoose_box table {
+	border: none;
+	border-collapse: collapse;
+}
+.threshold_small_img{
+	width : 1.5rem;
+}
+.threshold_mid_column{
+	width : 9rem;
+}
+.threshold_large_column{
+	width : 20rem;
+}
+.threshold_small_column{
+	width : 6rem;
+}
+.thresholdTitleArea{
+	text-overflow: ellipsis;
+}
+.thresholdColorPop {
+	overflow: hidden;
+	width: 19rem;
+	height: 20rem;
+	background: url("../../pages/images/frequency_selection_window.png")
+		no-repeat;
+	background-size: 100% 100%;
+	padding: 1rem 0 0.666666rem 0.666666rem;
+	position: absolute;
+}
+.leftSideBar_separate{
+	margin-bottom: 4rem;
+}
+
+.leftSideBar_notConfigThresholdData {
+	font-size: 1.2rem;
+	text-align: center;
+	color: #108e8e;
+	height: 100%;
+	line-height: 15rem;
+}
+.leftSideBar_threshodData_nocells {
+	font-size: 1.2rem;
+	text-align: center;
+	color: #108e8e;
+	height: 100%;
+	line-height: 15rem;
+}
+
+/*阈值配置页面样式修改*/
+#scene_rangeTypeBox select{
+	border: 1px solid #3d6f82 !important;
+	color: #00fffc;
+	width: 6.5rem;
+    padding: 0.2rem;
+}

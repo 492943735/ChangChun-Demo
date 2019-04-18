@@ -1,0 +1,167 @@
+.placePermissionBody {
+	background-color: rgba(25, 25, 25, 0.3);
+    margin-bottom: 0.8rem;
+}
+
+.placeTitleBody {
+	display: flex;
+	font-size: 1.3rem;
+}
+
+.placeTitle {
+	height: 3.75rem;
+	line-height: 3.75rem;
+	flex: 0.5;
+	color: #cccccc;
+	border: none;
+	background: transparent;
+	border-bottom: 0.166666rem solid #cccccc;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.placeTitleActive {
+	color: #00fffc;
+	border-bottom: 0.166666rem solid #00fffc;
+}
+
+.placeParent {
+	margin: 0;
+}
+
+.placeRow {
+	height: 2.8rem;
+	display: flex;
+	color: #cccccc;
+	font-size: 1.2rem;
+}
+
+.placeRowTitle {
+	display: inline-block;
+	flex: 0.25;
+	text-align: right;
+	position: relative;
+	top: 0.8rem;
+	left: 0;
+	height: 2rem;
+}
+
+.placeRowSelectBox {
+	display: inline-flex;
+	flex: 0.7;
+	height: 2rem;
+	position: relative;
+	top: 0.8rem;
+	left: 0;
+	border: 1px solid #3f4c4f;
+	padding-left: 0.855555rem;
+}
+
+.placeRowSelectTxt {
+	height: 100%;
+	display: inline-block;
+	flex: 0.9;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.placeRowSelectTxtList {
+	height: 100%;
+	display: inline-block;
+	flex: 0.1;
+	text-align: center;
+}
+
+.txtBody {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	line-height: 2rem;
+	overflow: hidden;
+	white-space: nowrap;
+ 	cursor: pointer;
+}
+
+.placeChilderBox {
+	margin: 0;
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	background-color: rgba(35, 45, 49, 0.9);
+	border: 1px solid #3f4c4f;
+	border-top: none;
+	padding-top: 0.25rem;
+}
+
+.placeCheckBoxTxt {
+	font-size: 1.166666rem;
+	color: #cccccc;
+	padding-left: 0.833333rem;
+	max-width: 80%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.placeChilderLi {
+	padding-left: 0.855555rem;
+	padding-top: 0.25rem;
+    cursor: pointer;
+}
+
+.placeCheckBoxTxtHover:hover {
+	background-color: #175759;
+}
+
+.placeInputImgChecked {
+	background-color: #00fffc;
+	overflow: hidden;
+}
+
+.placeSelectIcon {
+	border-width: 0.416666rem 0.333333rem 0 0.333333rem !important;
+	margin-top: -0.166666rem !important;
+	border-color: #00fffd transparent transparent transparent !important;
+	border-style: solid;
+	position: relative;
+	top: 50%;
+	left: 0;
+}
+
+.placeSelectedIcon {
+	top: 0 !important;
+	font-size: 1.2rem !important;
+	color: #333333 !important;
+}
+
+.placeSearch {
+    padding: 0 0.855555rem 0 0.855555rem;
+    height: 1.666666rem;
+    display: inline-block;
+    width: 100%;
+    cursor: help;
+}
+
+.placeSearchInput{
+    border: 1px solid #6b8c94;
+    padding: 0.25rem 0.833333rem;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    font-size: 1.166666rem;
+    line-height: 1.166666rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.listDataOverflow {
+    overflow: hidden;
+    height: 29.866666rem;
+    max-height: 29.866666rem;
+}

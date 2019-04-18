@@ -1,0 +1,32 @@
+.ztree li {
+    line-height: 2.5rem ;
+}
+
+.ztree li a {
+    line-height: 2.5rem ; 
+    color: #306A6B ;
+    width: 10rem ;
+}
+
+.ztree li span {
+    width: 8rem;
+	font-size: 1.166666rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+	margin-left: 0.5rem;
+	line-height: 2.5rem;
+}
+.ztree li span.button.ico_docu, .ztree li span.button.ico_close, .ztree li span.button.ico_open{
+    background-size: 100% 100% !important;
+	width: 1.666666rem;
+    height: 1.666666rem;
+    margin-top: 0.4rem;
+}
+
+.ztree li a.curSelectedNode {
+    background-color: transparent !important;
+    border: 0px transparent solid !important;
+    color: #00fffc!important;
+}

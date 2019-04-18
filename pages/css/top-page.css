@@ -1,0 +1,16 @@
+.homePageBox {
+    position: absolute;
+    top: 5rem;
+    left: 2%;
+    z-index: 20;
+}
+
+.toppage{
+    width: 11rem;
+    height: 4.5rem;
+    font-size: 2rem;
+    font-family: 'Gotham';
+    background-image: url('../images/home_page_light.png');
+    background-repeat: no-repeat;
+    background-size: contain;    
+}

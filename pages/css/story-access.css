@@ -1,0 +1,44 @@
+.storyAccessIcon {
+    top: -0.3rem!important;
+    font-size: 1.2rem!important;
+    color: #333333!important;
+}
+
+.parent {
+	margin: 0 0 0 1rem;
+}
+
+.parentLi {
+	margin-bottom: 1rem;
+}
+
+.childerBox {
+   	margin: 0 0 0 2rem;
+}
+
+.storyAccessTxt {
+	cursor: pointer!important;
+	position: relative;
+}
+
+.storyTreeIcon {
+	position: relative;
+	border-style:solid;
+	border-color: transparent transparent transparent #00fffc;
+	border-width: 0.5rem;
+	display: inline-block;
+    vertical-align: text-top;
+}
+
+.storyTreeIconOpen {
+	position: relative;
+	border-style:solid;
+	border-color: #00fffc transparent transparent transparent;
+	border-width: 0.5rem;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.openLine {
+	cursor: pointer!important;
+}

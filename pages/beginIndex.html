@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="cn" ng-app="main" style="width: 100%; height: 100%">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HDI</title>
+	<link rel="stylesheet" type="text/css" href="css/font-fire.min.css">
+	<link rel="stylesheet" type="text/css" href="thirdparty/angular/ui-bootstrap/ui-bootstrap-csp.css">
+	<link rel="stylesheet" type="text/css" href="thirdparty/angular/toaster/toaster.css">
+	<link rel="stylesheet" type="text/css" href="thirdparty/gis/resources/css/fusiongis.css" />
+	<link rel="stylesheet" type="text/css" href="thirdparty/gis/lib/ol/ol.css" />
+	<link rel="stylesheet" type="text/css" href="thirdparty/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="thirdparty/select2/select2.css">
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/gloable.css">
+	<link rel="stylesheet" type="text/css" href="css/colorChooseContent.css">
+	<link rel="stylesheet" type="text/css" href="css/story.css">
+	<link rel="stylesheet" type="text/css" href="css/top-page.css">
+	<link rel="stylesheet" type="text/css" href="css/table-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/timePicker.css">
+	<link rel="stylesheet" type="text/css" href="css/frequency.css">
+	<link rel="stylesheet" type="text/css" href="css/resourceSite.css">
+	<link rel="stylesheet" type="text/css" href="css/story-access.css">
+	<link rel="stylesheet" type="text/css" href="css/location.css">
+	<link rel="stylesheet" type="text/css" href="css/planning.css">
+	<link rel="stylesheet" type="text/css" href="css/zTreeStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<link rel="stylesheet" type="text/css" href="css/regional.css">
+	<link rel="stylesheet" href="css/font-fire.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/gloable.css" />
+	<link rel="stylesheet" href="css/setting.css" />
+	<style type="text/css">
+    	.iframeClass {display:none; position:absolute;z-index:999;width:100%;height:100%;}
+	</style>
+	<script type="text/javascript">
+		//这个是maker的数据
+        var sss = '{"infoNum":3000,"markInfo":[{"visual_level":"11","mark_name":"Huawei","legend_size":"35","location_mark":"20","markDatas":"ic_locationMark.png","parentId":"1"},{"visual_level":"11","mark_name":"Area","legend_size":"35","location_mark":"21","markDatas":"ic_locationMark.png","parentId":"null"}]}';
+	    var locationMarkConfig = JSON.parse(sss);
+		var locationMarkConfigCopy = JSON.parse(JSON.stringify(locationMarkConfig));
+	    var pageStartTime = new Date();
+        var _csrf = "28120632-58f1-4374-b79d-61a3d92e5606";
+        var _csrf_header = "X-CSRF-TOKEN";
+		var requestContext = '';
+		var localLanguage = 'zh_CN';
+		var permissionMap = {"updatePermission":true,"addPermission":true,"deletePermission":true,"thresholdPermission":true};
+		var nowDate =  new Date();
+		var maxDate =nowDate.toLocaleDateString(); //'2017-11-27';
+		var minDate = (new Date(new Date().getTime()-7*86400000)).toLocaleDateString();
+		var isHourInterval = true;
+		var viewWidth= 80;
+		var viewHeight= 80;
+		var backendCellRender = 'false';
+		var backendCellRenderUrl = '/fusiongisaccess/resources/fusiongis/fusiongisForApp.js';
+		   
+		var userConfig = {"smallMap":{"mapName":"smallMap","mapType":"GOOGLE_MAP","mapUrl":"","mapUrlKey":"AIzaSyAVEjq5m27qCuTNytbGBDdwOKLUjT1UsAs",
+		"mapLongitude":"125.313834","mapLatitude":"43.876756","mapMinZoom":"7","mapMaxZoom":"7",
+		"mapZoom":"7","maxMainMapLongitude":"","minMainMapLongitude":"","maxMainMapLatitude":"","minMainMapLatitude":""},
+		"mainMap":{"mapName":"mainMap","mapType":"GOOGLE_MAP","mapUrl":"","mapUrlKey":"AIzaSyAVEjq5m27qCuTNytbGBDdwOKLUjT1UsAs","mapLongitude":"125.325352",
+		"mapLatitude":"43.863745","mapMinZoom":"7","mapMaxZoom":"21","mapZoom":"13","maxMainMapLongitude":"","minMainMapLongitude":"",
+		"maxMainMapLatitude":"","minMainMapLatitude":""}};
+		
+		var renderDiscoveryIndicatorByCell = 'false';
+		var topHomePageSwitch = 'true';
+		var surpportPlayBack = 'true'; //回放开关
+		var playBackWaitTime = '5000';//回放等待时长
+		var playBackOverTime = '10000'; //回放超时时长
+		var maxStoryLineShowNum = '3';
+		var PBackRSRXInterval = '10000'; //RSRX回放间隔时长
+		var accessData = [{"accessVal":0,"listShow":false,"data":[{"frequency":"700","checked":true},{"frequency":"800","checked":true},{"frequency":"850","checked":true},{"frequency":"900","checked":true},{"frequency":"1700","checked":true},{"frequency":"1800","checked":true},{"frequency":"2100","checked":true},{"frequency":"5000","checked":true}],"left":"0rem","multiSelected":false,"checkedType":"i18n.access.all","access":"2G","checked":false},{"accessVal":1,"listShow":false,"data":[{"frequency":"700","checked":true},{"frequency":"800","checked":true},{"frequency":"850","checked":true},{"frequency":"900","checked":true},{"frequency":"1700","checked":true},{"frequency":"1800","checked":true},{"frequency":"2100","checked":true},{"frequency":"2600","checked":true}],"left":"-40rem","multiSelected":false,"checkedType":"i18n.access.all","access":"3G","checked":false},{"accessVal":2,"listShow":false,"data":[{"frequency":"700","checked":false},{"frequency":"800","checked":false},{"frequency":"900","checked":false},{"frequency":"1700","checked":false},{"frequency":"1800","checked":false},{"frequency":"2100","checked":true}],"left":"-80rem","multiSelected":false,"checkedType":"i18n.access.all","access":"4G","checked":true}];
+		var maxLocationMarkNum = Number('3000');
+		//含有TableauURL的数组
+		var integrateTableau = false;
+		var hourIntervalAutoRefresh = true; //小时粒度是否自动刷新
+		var licenseData = {"isHaveUserLicense":true,"hdiServiceUserNum":6571,"licenseNumIllegal":true,"userLicenseNum":500000000};
+		
+		if (!!window.ActiveXObject || "ActiveXObject" in window)
+		{
+		//如果浏览器为IE
+			setActiveStyleSheet("ie.css");
+		}else{
+			if (window.navigator.userAgent.indexOf("Firefox")>=1)
+			{
+			//如果浏览器为Firefox
+				setActiveStyleSheet("firfox.css");
+			}
+		};
+		function setActiveStyleSheet(title){
+			document.getElementsByTagName("link")[0].href="css/"+title;
+		};
+	</script>
+	<script type="text/javascript" src="modules/dataSource/cfg_business_lebel.js"></script>
+	<script type="text/javascript" src="modules/dataSource/cfg_kqi_threshold.js"></script>
+	<script type="text/javascript" src="modules/dataSource/cfg_story_lebel.js"></script>
+	<script type="text/javascript" src="modules/dataSource/location_mark_info.js"></script>
+	<script type="text/javascript" src="modules/dataSource/menu_url_info.js"></script>
+	<script type="text/javascript" src="modules/dataSource/sdr_data_kpi.js"></script>
+	<script type="text/javascript" src="modules/dataSource/sdr_data_kqi.js"></script>
+	<script type="text/javascript" src="modules/dataSource/sdr_data_user.js"></script>
+	<script type="text/javascript" src="thirdparty/jquery/jquery.js"></script>
+	<script type="text/javascript" src="thirdparty/jqueryui/jquery-ui.js"></script>
+	<script type="text/javascript" src="thirdparty/papaparse.min.js"></script>
+	<script type="text/javascript" src="thirdparty/angular/angular.js"></script>
+	<script type="text/javascript" src="thirdparty/angular/angular-dnd.js"></script>
+	<script type="text/javascript" src="thirdparty/angular/translate/angular-translate.js"></script>
+	<script type="text/javascript" src="thirdparty/angular/translate/angular-translate-loader-url.js"></script>
+	<script type="text/javascript" src="thirdparty/angular/translate/angular-translate-loader-static-files.js"></script>
+	<script type="text/javascript" src="thirdparty/angular/ui-bootstrap/ui-bootstrap.js"></script>
+	<script type="text/javascript" src="thirdparty/angular/ui-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script type="text/javascript" src="thirdparty/angular/toaster/toaster.js"></script>
+	<script type="text/javascript" src="thirdparty/echarts-all.js"></script>
+	<script type="text/javascript" src="thirdparty/gis/lib/html2canvas.js"></script>
+	<script type="text/javascript" src="thirdparty/gis/lib/ol/ol.js"></script>
+	<script type="text/javascript" src="thirdparty/gis/fusiongis-debug.js"></script>
+	<script type="text/javascript" src="thirdparty/select2/select2.js"></script>
+	<script type="text/javascript" src="i18n/en_US.js"></script>
+	<script type="text/javascript" src="i18n/zh_CN.js"></script>
+	<script type="text/javascript" src="modules/common/textAreaAuto.js"></script>
+	<script type="text/javascript" src="modules/common/Tool.js"></script>
+	<script type="text/javascript" src="modules/common/Constant.js"></script>
+	<script type="text/javascript" src="modules/common/common.js"></script>
+	<script type="text/javascript" src="modules/workbench/workbenchData.js"></script>
+	<script type="text/javascript" src="modules/common/directives/ngscrollbar.js"></script>
+	<script type="text/javascript" src="modules/common/directives/draggable.directive.js"></script>
+	<script type="text/javascript" src="modules/common/directives/droppable.directive.js"></script>
+	<script type="text/javascript" src="modules/common/directives/common-validate.directive.js"></script>
+	<script type="text/javascript" src="modules/common/directives/tip-model.directive.js"></script>
+	<script type="text/javascript" src="modules/common/directives/time-picker.directive.js"></script>
+	<script type="text/javascript" src="modules/common/services/tip-window.service.js"></script>
+	<script type="text/javascript" src="modules/main/main.js"></script>
+	<!--栅格测试两个js -->
+	<script type="text/javascript" src="modules/main/refreshMapDemo.js"></script>
+	<script type="text/javascript" src="modules/main/gridDensityDemo.js"></script>
+	<script type="text/javascript" src="modules/main/services/gis-map.service.js"></script>
+	<script type="text/javascript" src="modules/main/services/floatmessage.service.js"></script>
+	<script type="text/javascript" src="modules/main/services/menubar.service.js"></script>
+	<script type="text/javascript" src="modules/main/services/story-filter.service.js"></script>
+	<script type="text/javascript" src="modules/main/services/story-line.service.js"></script>
+	<script type="text/javascript" src="modules/main/directives/map.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/menubar.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/menubar-item.directive.js"></script>
+	<script type="text/javascript" src="modules/main/services/play-back.service.js"></script>
+	<script type="text/javascript" src="modules/main/directives/playback.directive.js"></script>
+	<script type="text/javascript" src="modules/main/services/new.setting.service.js"></script>
+	<script type="text/javascript" src="modules/main/directives/new.setting.directive.js"></script>
+	<script type="text/javascript" src="modules/main/services/tableau.service.js"></script>
+	<script type="text/javascript" src="modules/main/directives/tableau.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/title-header-info.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/menubar-save-mould.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/menubar-open.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/menubar-open-mould.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/story-filter.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/story-summary.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/story-preview.directive.js"></script>
+	<script type="text/javascript" src="modules/main/directives/story-access.directive.js"></script>
+	<script type="text/javascript" src="modules/rightsidebar/right-sidebar.js"></script>
+	<script type="text/javascript" src="modules/rightsidebar/directives/right-sidebar.directive.js"></script>
+	<script type="text/javascript" src="modules/rightsidebar/directives/indicator-area.directive.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/left-sidebar.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/services/homePage.service.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/directives/home-page.directive.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/directives/left-sidebar.directive.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/directives/choose-color-mould.directive.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/directives/access-type.directive.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/directives/frequency.directive.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/directives/frequency-model.directive.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/directives/location-store.directive.js"></script>
+	<script type="text/javascript" src="modules/leftsidebar/directives/location-store-setting.directive.js"></script>
+	<script type="text/javascript" src="modules/workbench/workbench.js"></script>
+	<script type="text/javascript" src="modules/workbench/services/tab.service.js"></script>
+	<script type="text/javascript" src="modules/workbench/services/indicator.servers.js"></script>
+	<script type="text/javascript" src="modules/workbench/controllers/indicator.controller.js"></script>
+	<script type="text/javascript" src="modules/workbench/directives/workbench.directive.js"></script>
+	<script type="text/javascript" src="modules/workbench/directives/tab.directive.js"></script>
+	<script type="text/javascript" src="modules/workbench/directives/tab-item.directive.js"></script>
+	<script type="text/javascript" src="modules/workbench/directives/tab-content.directive.js"></script>
+	<script type="text/javascript" src="modules/workbench/directives/story-scenario.directive.js"></script>
+	<script type="text/javascript" src="modules/workbench/directives/indicator.directive.js"></script>
+	<script type="text/javascript" src="modules/workbench/directives/indicator-app.directive.js"></script>
+	<script type="text/javascript" src="modules/workbench/directives/indicator-app-total.directive.js"></script>
+	<script type="text/javascript" src="modules/setting/setting.js"></script>
+	<script type="text/javascript" src="modules/setting/services/label-i18n.service.js"></script>
+	<script type="text/javascript" src="modules/setting/services/indicator-query.service.js"></script>
+	<script type="text/javascript" src="modules/setting/services/label.service.js"></script>
+	<script type="text/javascript" src="modules/setting/directives/setting.directive.js"></script>
+	<script type="text/javascript" src="modules/setting/directives/label-group.directive.js"></script>
+	<script type="text/javascript" src="modules/setting/directives/conf-label.directive.js"></script>
+	<script type="text/javascript" src="modules/setting/directives/choose-img-mould.directive.js"></script>
+	<script type="text/javascript" src="thirdparty/html2canvas.min.js"></script>
+	<script type="text/javascript" src="thirdparty/zTree/jquery.ztree.core-3.5.js"></script>
+	<script type="text/javascript" src="thirdparty/zTree/jquery.ztree.excheck-3.5.js"></script>
+	<script type="text/javascript" src="thirdparty/zTree/jquery.ztree.exhide-3.5.js"></script>
+	<script type="text/javascript" src="thirdparty/zTree/jquery.ztree.exedit-3.5.js"></script>
+</head>
+<body id="cxo_main" ng-controller="MainController" ng-class="{loading: loadingInterceptor.getloadingCount() != 0}" style=" position: relative; z-index:500;">
+<input type="text" id="iframeNum" value="" style="  display:none;">
+	<div class="loading-mask"></div>
+	<!-- 大地图和双屏地图区  -->
+	<div class="mapBox">
+	    <div class="gisInfoDiv" style="width:100%;" id="gisWholeMapId">
+	       <map map-model="mapData.wholeMap" map-data="mapData"></map>
+	    </div>
+	</div>
+	<div class="doubleScreen" style="width:50%;left:50%;" ng-show="mapData.isDoubleScreen">
+	    <div class="new_map_right" style="width:100%;">
+	       <map map-model="mapData.rightMap" map-data="mapData"></map>
+	    </div>
+	</div>
+	<div class="new_conbox">
+		<div class="new_conbox_move row">
+			<!-- 顶部  -->
+			<div class="top_container" id="topBox">
+			   <setting id="settingBox" ng-app="setting" ng-if="" style="position:relative; z-index: 25;"></setting>
+				<div class="row zhujian extr" id="topDiv" >
+					<div class="col-md-12 head-msg" id="topMsg">
+						<title-header-info></title-header-info>
+					</div>
+					<menubar></menubar>
+				</div>
+			</div>
+			<tableau ></tableau>
+			<left-sidebar ng-app="sidebar.left"></left-sidebar>
+			<!-- 底部 start-->
+			<div class="newFootBox row" ng-class="{newFootBox_hide: !tabService.tabData.workBenchVisiable}">
+				<!-- 小地图 start-->
+				<div class="new_map_small zhujian col-md-2" id="{{mapData.smallMap.renderToId}}">
+					<img class="new_earths" ng-src="{{imgBasePath + IMAGES.earth}}"/>
+				</div>
+				<work-bench ng-app="workbench"></work-bench>
+			</div>
+			<!-- 底部 end-->
+		</div>
+	</div>		
+	<!-- conbox end-->
+	<form id="exportForm" enctype="" action="${requestContext}/export/exportData.action" method="post" style="display: none;">
+		<input id="exportUuid" name="uuid" value="" />
+		<input id="exportRequestTime" name="requestTime" value="" />
+		<input id="exportFileName" name="fileName" value="" />
+		<input id="exportLables" name="lables" value="" />
+		<input id="exportTime" name="exportTime" value="" />
+	</form>
+	<form id="storyExportForm" enctype="" action="${requestContext}/summary/exportData.action" method="post" style="display: none;">
+		<input id="params" name="params" value="" />
+	</form>
+	<!-- 主体 end-->
+	<!-- 全局模态框 start  -->
+	<tip-model></tip-model>
+	<menubar-open-mould ng-if="openImg.isActive"></menubar-open-mould>
+	<menubar-save-mould ng-if="storyLineService.isShowUI()"></menubar-save-mould>
+	<choose-color-mould></choose-color-mould>
+	<story-scenario></story-scenario>
+	<frequency ng-if="accessModel.accessUIData.frequencyShow"></frequency>
+	<location-store-setting ng-if="locationModel.locationUIData.locationSettingShow"></location-store-setting>
+	<setting-html></setting-html>
+	<script type="text/ng-template" id="workbench/template/tab-content.tpl.html">
+		<div class="tab_con" style="overflow: hidden;" id="workbench_tab_con">
+		<div id="workbench_new_tab_con1" class="new_tab_con1"
+		droppable on-drop="dropOnTabContent(event, ui, $dragModel)" drop-opts="{layer: 'layer2'}">
+		<div id="new_tab_users" class="new_tab_users" ng-scrollbar>
+			<indicator ng-repeat="ica in activeTab.content.userIcas track by $index" ica="ica" >
+			</indicator>
+		</div>
+		<div class="jgx" id="new_tab_con1_jgx"></div>
+		<div class="new_tab_application" id="workbench_tab_con_application">
+			<div class="new_tab_application_l"  id="workbench_tab_con_application_l">
+				<indicator-app ng-repeat="ica in activeTab.content.appLeftIcas track by $index" ica="ica">
+				</indicator-app>
+			</div>
+			<div class="new_tab_application_c">
+				<div id="tab_application" class="tabcontentPie"></div>
+				<!-- Total Traffic -->
+				<indicator-app-total ica="activeTab.content.totalTraffic" class="tabcontentPie"></indicator-app-total>
+			</div>
+			<div class="new_tab_application_r"  id="workbench_tab_con_application_r">
+				<indicator-app ng-repeat="ica in activeTab.content.appRightIcas track by $index" ica="ica" >
+				</indicator-app>
+			</div>
+		</div>
+		<div class="spacingline"  id="workbench_tab_con_application_spacingline"></div>
+		<div class="tab_quality" ng-scrollbar id="workbench_tab_con_application_tab_quality">
+			<indicator ng-repeat="ica in activeTab.content.qualityIcas track by $index" ica="ica">
+			</indicator>
+		</div>
+	</div>
+</div>
+	</script>
+	<script type="text/javascript">
+	function goTosetPage(n){		
+		$('#cxo_main').find('iframe').css('z-index', '1');
+		$("#top_menu").css('z-index', '1000') ;
+		$("#top_iframe"+n).css('z-index', '999');				 
+	}
+	function initMenuPage(){
+		var iframeNum=$("#iframeNum").val();		
+		for(var i=1;i<=iframeNum;i++){
+			window.frames["top_iframe"+i].remove();
+		}
+		$("#top_menu").css('display', 'none') ;
+		
+	}
+	</script>
+</body>
+</html>

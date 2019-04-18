@@ -1,0 +1,62 @@
+﻿label_name,type,image,story_type,LeftOrRight,Active,data,unit,indicator,KQI Name,name,day_Working,day_Rest,night_Working,night_Rest,conerImg,ifExist,checked
+98元不限量套餐,a,label_right_who.png,DIY,FALSE,FALSE,129,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,产品（who）,129,1290,12904,129047,workbench_who.png,TRUE,TRUE
+48元套餐,a,label_right_who.png,DIY,FALSE,FALSE,130,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,产品（who）,130,1291,12905,129048,workbench_who.png,TRUE,TRUE
+互联网套餐,a,label_right_who.png,DIY,FALSE,FALSE,131,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,产品（who）,131,1292,12906,129049,workbench_who.png,TRUE,TRUE
+18元套餐,a,label_right_who.png,DIY,FALSE,FALSE,151,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,产品（who）,151,1592,15906,159049,workbench_who.png,TRUE,TRUE
+疑似异网宽带,b,label_right_how.png,DIY,FALSE,FALSE,132,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,使用（how）,132,1293,12907,129050,workbench_how.png,TRUE,TRUE
+二卡槽,b,label_right_how.png,DIY,FALSE,FALSE,133,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,使用（how）,133,1294,12908,129051,workbench_how.png,TRUE,TRUE
+合约期到期,b,label_right_how.png,DIY,FALSE,FALSE,134,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,使用（how）,134,1295,12909,129052,workbench_how.png,TRUE,TRUE
+数据低饱和,b,label_right_how.png,DIY,FALSE,FALSE,174,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,使用（how）,174,1795,17909,179052,workbench_how.png,TRUE,TRUE
+重度抖音爱好者,c,label_right_whatelse.png,DIY,FALSE,FALSE,135,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,偏好（what else）,135,1296,12910,129053,workbench_whatelse.png,TRUE,TRUE
+重度王者荣耀,c,label_right_whatelse.png,DIY,FALSE,FALSE,136,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,偏好（what else）,136,1297,12911,129054,workbench_whatelse.png,TRUE,TRUE
+爱奇艺粉丝,c,label_right_whatelse.png,DIY,FALSE,FALSE,137,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,偏好（what else）,137,1298,12912,129055,workbench_whatelse.png,TRUE,TRUE
+DL RTT,d,label_right_kqi.png,DIY,FALSE,FALSE,138,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,指标（kqi）,138,1299,12913,129056,workbench_KQI.png,TRUE,TRUE
+PRB利用率,d,label_right_kqi.png,DIY,FALSE,FALSE,139,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,指标（kqi）,139,1300,12914,129057,workbench_KQI.png,TRUE,TRUE
+头条,e,label_right_group1.png,DIY,TRUE,FALSE,141,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组1（new group1）,141,1302,12916,129059,workbench_group1.png,FALSE,FALSE
+酷狗,e,label_right_group1.png,DIY,TRUE,FALSE,142,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组1（new group1）,142,1303,12917,129060,workbench_group1.png,FALSE,FALSE
+全部应用,e,label_right_group1.png,DIY,TRUE,FALSE,143,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组1（new group1）,143,1304,12918,129061,workbench_group1.png,FALSE,FALSE
+全网用户1,f,label_right_group2.png,DIY,FALSE,FALSE,144,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,新建标签组2（new group2）,144,1305,12919,129062,workbench_group2.png,FALSE,FALSE
+OTT,f,label_right_group2.png,DIY,FALSE,FALSE,145,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,新建标签组2（new group2）,145,1306,12920,129063,workbench_group2.png,FALSE,FALSE
+省内不限量1,f,label_right_group2.png,DIY,FALSE,FALSE,146,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,新建标签组2（new group2）,146,1307,12921,129064,workbench_group2.png,FALSE,FALSE
+国内不限量1,g,label_right_group3.png,DIY,FALSE,FALSE,147,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,新建标签组3（new group3）,147,1308,12922,129065,workbench_group3.png,FALSE,FALSE
+视频下载速率1,g,label_right_group3.png,DIY,FALSE,FALSE,148,,HDI_METADATA_GRP_VIDEO_DOWNLOAD_THROUGHPUT,,新建标签组3（new group3）,148,1309,12923,129066,workbench_group3.png,FALSE,FALSE
+下行RTT时延1,g,label_right_group3.png,DIY,FALSE,FALSE,149,,HDI_METADATA_GRP_DOWNLINK_RTT_DELAY,,新建标签组3（new group3）,149,1310,12924,129067,workbench_group3.png,FALSE,FALSE
+RSRP1,h,label_right_group4.png,DIY,FALSE,FALSE,150,,HDI_METADATA_GRP_RSRP,,新建标签组4（new group4）,150,1311,12925,129068,workbench_group4.png,FALSE,FALSE
+PRB利用率1,h,label_right_group4.png,DIY,FALSE,FALSE,151,,HDI_METADATA_PRB_UTILIZATION,,新建标签组4（new group4）,151,1312,12926,129069,workbench_group4.png,FALSE,FALSE
+抖音1,h,label_right_group4.png,DIY,FALSE,FALSE,152,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组4（new group4）,152,1313,12927,129070,workbench_group4.png,FALSE,FALSE
+微信1,i,label_right_group5.png,DIY,FALSE,FALSE,153,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组5（new group5）,153,1314,12928,129071,workbench_group5.png,FALSE,FALSE
+王者荣耀1,i,label_right_group5.png,DIY,FALSE,FALSE,154,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组5（new group5）,154,1315,12929,129072,workbench_group5.png,FALSE,FALSE
+淘宝1,i,label_right_group5.png,DIY,TRUE,FALSE,155,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组5（new group5）,155,1316,12930,129073,workbench_group5.png,FALSE,FALSE
+头条1,j,label_right_group6.png,DIY,TRUE,FALSE,156,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组6（new group6）,156,1317,12931,129074,workbench_group6.png,FALSE,FALSE
+酷狗1,j,label_right_group6.png,DIY,TRUE,FALSE,157,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组6（new group6）,157,1318,12932,129075,workbench_group6.png,FALSE,FALSE
+全部应用1,j,label_right_group6.png,DIY,TRUE,FALSE,158,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组6（new group6）,158,1319,12933,129076,workbench_group6.png,FALSE,FALSE
+全网用户2,a,label_right_who.png,DIY,FALSE,FALSE,129,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,产品（who）,129,1290,12904,129047,workbench_who.png,FALSE,FALSE
+Telco2,a,label_right_who.png,DIY,FALSE,FALSE,130,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,产品（who）,130,1291,12905,129048,workbench_who.png,FALSE,FALSE
+省内不限量2,a,label_right_who.png,DIY,FALSE,FALSE,131,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,产品（who）,131,1292,12906,129049,workbench_who.png,FALSE,FALSE
+国内不限量2,b,label_right_how.png,DIY,FALSE,FALSE,132,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,使用（how）,132,1293,12907,129050,workbench_how.png,FALSE,FALSE
+视频下载速率2,b,label_right_how.png,DIY,FALSE,FALSE,133,,HDI_METADATA_GRP_VIDEO_DOWNLOAD_THROUGHPUT,,使用（how）,133,1294,12908,129051,workbench_how.png,FALSE,FALSE
+下行RTT时延2,b,label_right_how.png,DIY,FALSE,FALSE,134,,HDI_METADATA_GRP_DOWNLINK_RTT_DELAY,,使用（how）,134,1295,12909,129052,workbench_how.png,FALSE,FALSE
+RSRP2,c,label_right_whatelse.png,DIY,FALSE,FALSE,135,,HDI_METADATA_GRP_RSRP,,偏好（what else）,135,1296,12910,129053,workbench_whatelse.png,FALSE,FALSE
+PRB利用率2,c,label_right_whatelse.png,DIY,FALSE,FALSE,136,,HDI_METADATA_PRB_UTILIZATION,,偏好（what else）,136,1297,12911,129054,workbench_whatelse.png,FALSE,FALSE
+抖音2,c,label_right_whatelse.png,DIY,FALSE,FALSE,137,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,偏好（what else）,137,1298,12912,129055,workbench_whatelse.png,FALSE,FALSE
+微信2,d,label_right_kqi.png,DIY,FALSE,FALSE,138,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,指标（kqi）,138,1299,12913,129056,workbench_KQI.png,FALSE,FALSE
+王者荣耀2,d,label_right_kqi.png,DIY,FALSE,FALSE,139,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,指标（kqi）,139,1300,12914,129057,workbench_KQI.png,FALSE,FALSE
+淘宝2,d,label_right_kqi.png,DIY,TRUE,FALSE,140,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,指标（kqi）,140,1301,12915,129058,workbench_KQI.png,FALSE,FALSE
+头条2,e,label_right_group1.png,DIY,TRUE,FALSE,141,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组1（new group1）,141,1302,12916,129059,workbench_group1.png,FALSE,FALSE
+酷狗2,e,label_right_group1.png,DIY,TRUE,FALSE,142,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组1（new group1）,142,1303,12917,129060,workbench_group1.png,FALSE,FALSE
+全部应用2,e,label_right_group1.png,DIY,TRUE,FALSE,143,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组1（new group1）,143,1304,12918,129061,workbench_group1.png,FALSE,FALSE
+全网用户3,f,label_right_group2.png,DIY,FALSE,FALSE,144,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,新建标签组2（new group2）,144,1305,12919,129062,workbench_group2.png,FALSE,FALSE
+OTT2,f,label_right_group2.png,DIY,FALSE,FALSE,145,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,新建标签组2（new group2）,145,1306,12920,129063,workbench_group2.png,FALSE,FALSE
+省内不限量3,f,label_right_group2.png,DIY,FALSE,FALSE,146,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,新建标签组2（new group2）,146,1307,12921,129064,workbench_group2.png,FALSE,FALSE
+国内不限量3,g,label_right_group3.png,DIY,FALSE,FALSE,147,,HDI_METADATA_GRP_SUBS_NUM_ROAMING,,新建标签组3（new group3）,147,1308,12922,129065,workbench_group3.png,FALSE,FALSE
+视频下载速率3,g,label_right_group3.png,DIY,FALSE,FALSE,148,,HDI_METADATA_GRP_VIDEO_DOWNLOAD_THROUGHPUT,,新建标签组3（new group3）,148,1309,12923,129066,workbench_group3.png,FALSE,FALSE
+下行RTT时延3,g,label_right_group3.png,DIY,FALSE,FALSE,149,,HDI_METADATA_GRP_DOWNLINK_RTT_DELAY,,新建标签组3（new group3）,149,1310,12924,129067,workbench_group3.png,FALSE,FALSE
+RSRP3,h,label_right_group4.png,DIY,FALSE,FALSE,150,,HDI_METADATA_GRP_RSRP,,新建标签组4（new group4）,150,1311,12925,129068,workbench_group4.png,FALSE,FALSE
+PRB利用率3,h,label_right_group4.png,DIY,FALSE,FALSE,151,,HDI_METADATA_PRB_UTILIZATION,,新建标签组4（new group4）,151,1312,12926,129069,workbench_group4.png,FALSE,FALSE
+抖音3,h,label_right_group4.png,DIY,FALSE,FALSE,152,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组4（new group4）,152,1313,12927,129070,workbench_group4.png,FALSE,FALSE
+微信3,i,label_right_group5.png,DIY,FALSE,FALSE,153,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组5（new group5）,153,1314,12928,129071,workbench_group5.png,FALSE,FALSE
+王者荣耀3,i,label_right_group5.png,DIY,FALSE,FALSE,154,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组5（new group5）,154,1315,12929,129072,workbench_group5.png,FALSE,FALSE
+淘宝3,i,label_right_group5.png,DIY,TRUE,FALSE,155,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组5（new group5）,155,1316,12930,129073,workbench_group5.png,FALSE,FALSE
+头条3,j,label_right_group6.png,DIY,TRUE,FALSE,156,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组6（new group6）,156,1317,12931,129074,workbench_group6.png,FALSE,FALSE
+酷狗3,j,label_right_group6.png,DIY,TRUE,FALSE,157,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组6（new group6）,157,1318,12932,129075,workbench_group6.png,FALSE,FALSE
+全部应用3,j,label_right_group6.png,DIY,TRUE,FALSE,158,,HDI_METADATA_GRP_NETWORK_TRAFFIC,,新建标签组6（new group6）,158,1319,12933,129076,workbench_group6.png,FALSE,FALSE
